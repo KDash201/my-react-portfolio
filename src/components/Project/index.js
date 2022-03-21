@@ -1,6 +1,6 @@
 import React from "react";
 
-function Project() {
+function Project(props) {
   return (
     <div>
       <p>I am conditionally rendered</p>

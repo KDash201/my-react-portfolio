@@ -1,35 +1,28 @@
-import React from "react";
+import React, { useEffect } from "react";
 
-function Nav2(props) {
-  console.log(props);
+function Nav(props) {
+  const { tabOptions = [], setCurrentTab, currentTab } = props;
+
+  useEffect(() => {
+    document.title = currentTab;
+  }, [currentTab]);
+
   return (
-    <nav>
-      <ul className="flex-row">
-        <ul className="mx-2">
-          {/* <li className="col-12 col-md-6 col-xl-3 mb-3"> */}
-          <a href="#home" onClick={() => props.setCurrentTab(false)}>
-            Home
-          </a>
-          {/* </li> */}
-          <li>
-            <a href="#about" onClick={() => props.setCurrentTab(true)}>
-              About
-            </a>
-          </li>
-          <li>
-            <a href="#contact" onClick={() => props.setCurrentTab(true)}>
-              Contact Me
-            </a>
-          </li>
-          <li>
-            <a href="#projects" onClick={() => props.setCurrentTab(true)}>
-              Projects
-            </a>
-          </li>
-        </ul>
-      </ul>
+    <nav className="d-flex navBar justify-content-between flex-wrap">
+      <a href="#home" onClick={() => setCurrentTab(false)}>
+        Home
+      </a>
+      <a href="#about" onClick={() => setCurrentTab(true)}>
+        About
+      </a>
+      <a href="#contact" onClick={() => setCurrentTab(true)}>
+        Contact Me
+      </a>
+      <a href="#projects" onClick={() => setCurrentTab(true)}>
+        Projects
+      </a>
     </nav>
   );
 }
 
-export default Nav2;
+export default Nav;
