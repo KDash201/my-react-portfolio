@@ -12,6 +12,19 @@ function App() {
   const [tabOptions] = useState(["Home", "About", "Contact Me", "Projects"]);
   const [currentTab, setCurrentTab] = useState(tabOptions[0]);
 
+  const [projectAvi] = useState([
+    {
+      name: "Run Buddy",
+      language: "HTML & CSS",
+    },
+    {
+      name: "Wet Nose Adoption",
+      language: "HTML, CSS and Javascript",
+    },
+  ]);
+
+  const [currentProjectAvi, setProjectAvi] = useState(false);
+
   return (
     <div>
       <Header
@@ -22,8 +35,15 @@ function App() {
 
       <main>
         <About />
-        {<button onClick={() => setIsToggled(!isToggled)}>Toggle</button>}
-        {isToggled && <Project />}
+        <Project
+          tabOptions={tabOptions}
+          setCurrentTab={setCurrentTab}
+          currentTab={currentTab}
+          projectAvi={projectAvi}
+          currentProjectAvi={currentProjectAvi}
+          setProjectAvi={setProjectAvi}
+        ></Project>
+
         {
           <footer>
             <Footer />
