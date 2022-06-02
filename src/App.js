@@ -7,6 +7,7 @@ import Footer from "./components/Footer/index.js";
 // import "./App.css";
 
 function App() {
+
   const [isToggled, setIsToggled] = useState(false);
 
   const [tabOptions] = useState(["Home", "About", "Contact Me", "Projects"]);
@@ -25,6 +26,8 @@ function App() {
 
   const [currentProjectAvi, setProjectAvi] = useState(false);
 
+  const [contactSelected, setContactSelected] = useState(false);
+
   return (
     <div>
       <Header
@@ -34,21 +37,23 @@ function App() {
       ></Header>
 
       <main>
-        <About />
-        <Project
-          tabOptions={tabOptions}
-          setCurrentTab={setCurrentTab}
-          currentTab={currentTab}
-          projectAvi={projectAvi}
-          currentProjectAvi={currentProjectAvi}
-          setProjectAvi={setProjectAvi}
-        ></Project>
+        {!contactSelected ? (
+          <>
+            <About />
+            <Project
+              tabOptions={tabOptions}
+              setCurrentTab={setCurrentTab}
+              currentTab={currentTab}
+              projectAvi={projectAvi}
+              currentProjectAvi={currentProjectAvi}
+              setProjectAvi={setProjectAvi}
+            ></Project>
+          </>) : (
 
-        {
           <footer>
             <Footer />
           </footer>
-        }
+        )}
       </main>
     </div>
   );
