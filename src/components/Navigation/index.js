@@ -13,7 +13,7 @@ function Nav(props) {
         Home
       </a>
       <a href="#about" onClick={() => setCurrentTab(true)}>
-        About
+        About Me
       </a>
       <a href="#contact" onClick={() => setCurrentTab(true)}>
         Contact Me
