@@ -5,8 +5,7 @@ import About from "./components/About/index.js";
 import Footer from "./components/Footer/index.js";
 import Resume from "./components/Resume/index.js";
 import Contact from "./components/Contact/index.js";
-
-// import "./App.css";
+import "./App.css";
 
 function App() {
   const [currentTab, setCurrentTab] = useState("About");

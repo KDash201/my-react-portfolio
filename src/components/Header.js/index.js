@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { capitalizeFirstLetter } from "../../utils/helpers";
+import Nav from "../Nav";
 
 import avi from "../../assets/images/avi.png";
 // import Nav from "../Nav";
@@ -30,6 +31,7 @@ function Header({ currentTab, setCurrentTab }) {
       >
         K-Von Madison
       </a>
+      <Nav currentTab={currentTab} setCurrentTab={setCurrentTab} />
     </header>
   );
 }
