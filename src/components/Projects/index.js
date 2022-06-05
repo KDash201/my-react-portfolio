@@ -2,7 +2,7 @@ import React from "react";
 import Projectlist from "../Projectlist";
 import { capitalizeFirstLetter } from "../../utils/helpers";
 
-function Project(props) {
+function Projects(props) {
   const {
     tabOptions = [],
     setCurrentTab,
@@ -25,4 +25,4 @@ function Project(props) {
   );
 }
 
-export default Project;
+export default Projects;

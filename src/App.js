@@ -1,60 +1,82 @@
 import React, { useState } from "react";
 import Header from "./components/Header.js";
-import Project from "./components/Project/index.js";
+import Projects from "./components/Projects/index.js";
 import About from "./components/About/index.js";
 import Footer from "./components/Footer/index.js";
+import Resume from "./components/Resume/index.js";
+import Contact from "./components/Contact/index.js";
 
 // import "./App.css";
 
 function App() {
+  const [currentTab, setCurrentTab] = useState("About");
 
-  const [isToggled, setIsToggled] = useState(false);
+  function renderPage() {
+    if (currentTab === "About") {
+      return <About />;
+    } else if (currentTab === "Projects") {
+      return <Projects />;
+    } else if (currentTab === "Resume") {
+      return <Resume />;
+    } else if (currentTab === "Contact") {
+      return <Contact />;
+    }
+  }
 
-  const [tabOptions] = useState(["Home", "About", "Contact Me", "Projects"]);
-  const [currentTab, setCurrentTab] = useState(tabOptions[0]);
+  // const [isToggled, setIsToggled] = useState(false);
 
-  const [projectAvi] = useState([
-    {
-      name: "Run Buddy",
-      language: "HTML & CSS",
-    },
-    {
-      name: "Wet Nose Adoption",
-      language: "HTML, CSS and Javascript",
-    },
-  ]);
+  // const [tabOptions] = useState(["Home", "About", "Contact Me", "Projects"]);
+  // const [currentTab, setCurrentTab] = useState(tabOptions("Home"));
 
-  const [currentProjectAvi, setProjectAvi] = useState(false);
+  // const [projectAvi] = useState([
+  //   {
+  //     name: "Run Buddy",
+  //     language: "HTML & CSS",
+  //   },
+  //   {
+  //     name: "Wet Nose Adoption",
+  //     language: "HTML, CSS and Javascript",
+  //   },
+  // ]);
 
-  const [contactSelected, setContactSelected] = useState(false);
+  // const [currentProjectAvi, setProjectAvi] = useState(projectAvi[0]);
+
+  // const [contactSelected, setContactSelected] = useState(false);
 
   return (
     <div>
-      <Header
-        tabOptions={tabOptions}
+      <Header currentTab={currentTab} setCurrentTab={setCurrentTab} />
+      {/* tabOptions={tabOptions}
         setCurrentTab={setCurrentTab}
         currentTab={currentTab}
-      ></Header>
+        contactSelected={contactSelected}
+        setContactSelected={setContactSelected}
+        projectAvi={projectAvi}
+        currentProjectAvi={currentProjectAvi}
+        setProjectAvi={setProjectAvi}
+      ></Header> */}
 
       <main>
-        {!contactSelected ? (
+        {renderPage()}
+        {/* {!contactSelected ? (
           <>
             <About />
-            <Project
+            <Projects
               tabOptions={tabOptions}
               setCurrentTab={setCurrentTab}
               currentTab={currentTab}
               projectAvi={projectAvi}
               currentProjectAvi={currentProjectAvi}
               setProjectAvi={setProjectAvi}
-            ></Project>
-          </>) : (
-
+            ></Projects>
+          </>
+        ) : (
           <footer>
             <Footer />
           </footer>
-        )}
+        )} */}
       </main>
+      <Footer />
     </div>
   );
 }
