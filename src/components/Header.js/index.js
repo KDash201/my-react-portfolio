@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { capitalizeFirstLetter } from "../../utils/helpers";
 import Nav from "../Nav";
 
-import avi from "../../assets/images/avi.png";
+// import avi from "../../assets/images/avi.png";
 // import Nav from "../Nav";
 
 function Header({ currentTab, setCurrentTab }) {
@@ -22,9 +22,9 @@ function Header({ currentTab, setCurrentTab }) {
     <header>
       <a
         id="title-name"
-        className={currentTab == "About" ? "active-page" : "inactive-page"}
+        className={currentTab === "About" ? "active-page" : "inactive-page"}
         title-name
-        href="#"
+        href="#About"
         onClick={() => {
           setCurrentTab("About");
         }}

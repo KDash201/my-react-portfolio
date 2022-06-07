@@ -36,7 +36,7 @@ function Nav({ currentTab, setCurrentTab }) {
       </a>
 
       <a
-        className={currentTab == "Resume" ? "active-page" : "inactive-page"}
+        className={currentTab === "Resume" ? "active-page" : "inactive-page"}
         href="#Resume"
         onClick={() => {
           setCurrentTab("Resume");
