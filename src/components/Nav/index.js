@@ -17,8 +17,8 @@ function Nav({ currentTab, setCurrentTab }) {
   return (
     <nav>
       <a
-        className={currentTab == "About" ? "active-page" : "inactive-page"}
-        href="#"
+        className={currentTab === "About" ? "active-page" : "inactive-page"}
+        href="#About"
         onClick={() => {
           setCurrentTab("About");
         }}
@@ -26,31 +26,23 @@ function Nav({ currentTab, setCurrentTab }) {
         About Me
       </a>
       <a
-        className={currentTab == "Portfolio" ? "active-page" : "inactive-page"}
-        href="#"
+        className={currentTab === "Portfolio" ? "active-page" : "inactive-page"}
+        href="#Portfolio"
         onClick={() => {
           setCurrentTab("Portfolio");
         }}
       >
         Portfolio
       </a>
+
       <a
         className={currentTab == "Resume" ? "active-page" : "inactive-page"}
-        href="#"
+        href="#Resume"
         onClick={() => {
           setCurrentTab("Resume");
         }}
       >
         Resume
-      </a>
-      <a
-        className={currentTab == "Contact" ? "active-page" : "inactive-page"}
-        href="#"
-        onClick={() => {
-          setCurrentTab("Contact");
-        }}
-      >
-        Contact Me
       </a>
     </nav>
   );

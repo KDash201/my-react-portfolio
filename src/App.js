@@ -4,7 +4,6 @@ import Projects from "./components/Projects/index.js";
 import About from "./components/About/index.js";
 import Footer from "./components/Footer/index.js";
 import Resume from "./components/Resume/index.js";
-import Contact from "./components/Contact/index.js";
 import "./App.css";
 
 function App() {
@@ -17,8 +16,6 @@ function App() {
       return <Projects />;
     } else if (currentTab === "Resume") {
       return <Resume />;
-    } else if (currentTab === "Contact") {
-      return <Contact />;
     }
   }
 
