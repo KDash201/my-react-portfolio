@@ -1,0 +1,38 @@
+@media screen and (max-width: 930px) {
+  #about {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-p {
+    font-size: 20px;
+    width: 100%;
+  }
+
+  .profile-pic {
+    margin: 0;
+  }
+
+  .main-section-content {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 572px) {
+  .profile-pic {
+    height: 250px;
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 444px) {
+  .profile-pic {
+    height: 200px;
+    width: 200px;
+  }
+
+  #about-title {
+    margin-bottom: -25px;
+  }
+}

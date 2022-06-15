@@ -1,5 +1,6 @@
 import React from "react";
 import avi from "../../assets/images/Me/avi.png";
+import "./style.css";
 
 function About(props) {
   return (
