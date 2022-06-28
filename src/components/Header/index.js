@@ -1,23 +1,9 @@
 import React, { useEffect } from "react";
 import { capitalizeFirstLetter } from "../../utils/helpers";
 import Nav from "../Nav";
-
-// import avi from "../../assets/images/avi.png";
-// import Nav from "../Nav";
+import "./style.css";
 
 function Header({ currentTab, setCurrentTab }) {
-  // const {
-  //   tabOptions = [],
-  //   setCurrentTab,
-  //   currentTab,
-  //   contactSelected,
-  //   setContactSelected,
-  // } = props;
-
-  // // useEffect(() => {
-  // //   document.title = capitalizeFirstLetter(currentTab.name);
-  // // }, [currentTab]);
-
   return (
     <header>
       <a

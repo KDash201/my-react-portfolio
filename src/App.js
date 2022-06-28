@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import Header from "./components/Header.js";
-import Projects from "./components/Projects/index.js";
-import About from "./components/About/index.js";
-import Footer from "./components/Footer/index.js";
-import Resume from "./components/Resume/index.js";
+import Header from "./components/Header";
+import Projects from "./components/Projects";
+import About from "./components/About";
+import Footer from "./components/Footer";
+import Resume from "./components/Resume";
 import "./App.css";
 
 function App() {

@@ -10,7 +10,7 @@
     width: 100%;
   }
 
-  .profile-pic {
+  .avi {
     margin: 0;
   }
 
@@ -20,14 +20,14 @@
 }
 
 @media screen and (max-width: 572px) {
-  .profile-pic {
+  .avi {
     height: 250px;
     width: 250px;
   }
 }
 
 @media screen and (max-width: 444px) {
-  .profile-pic {
+  .avi {
     height: 200px;
     width: 200px;
   }

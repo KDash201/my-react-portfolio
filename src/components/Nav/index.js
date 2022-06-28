@@ -1,17 +1,10 @@
 import React, { useEffect } from "react";
 import { capitalizeFirstLetter } from "../../utils/helpers";
+import "./style.css";
 
 function Nav({ currentTab, setCurrentTab }) {
-  // const {
-  //   tabOptions = [],
-  //   setCurrentTab,
-  //   currentTab,
-  //   contactSelected,
-  //   setContactSelected,
-  // } = props;
-
   // useEffect(() => {
-  //   document.title = capitalizeFirstLetter(currentTab.name);
+  //   document.title = capitalizeFirstLetter(currentTab);
   // }, [currentTab]);
 
   return (
@@ -26,13 +19,13 @@ function Nav({ currentTab, setCurrentTab }) {
         About Me
       </a>
       <a
-        className={currentTab === "Portfolio" ? "active-page" : "inactive-page"}
-        href="#Portfolio"
+        className={currentTab === "Projects" ? "active-page" : "inactive-page"}
+        href="#Projects"
         onClick={() => {
-          setCurrentTab("Portfolio");
+          setCurrentTab("Projects");
         }}
       >
-        Portfolio
+        Projects
       </a>
 
       <a
