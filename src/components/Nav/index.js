@@ -1,12 +1,7 @@
-import React, { useEffect } from "react";
-import { capitalizeFirstLetter } from "../../utils/helpers";
+import React from "react";
 import "./style.css";
 
 function Nav({ currentTab, setCurrentTab }) {
-  // useEffect(() => {
-  //   document.title = capitalizeFirstLetter(currentTab);
-  // }, [currentTab]);
-
   return (
     <nav>
       <a
@@ -40,26 +35,5 @@ function Nav({ currentTab, setCurrentTab }) {
     </nav>
   );
 }
-
-//       {tabOptions.map((tab) => (
-//         <li
-//           className={`mx-1 ${
-//             currentTab.name === tab.name && !contactSelected && "navActive"
-//           }`}
-//           key={tab.name}
-//         >
-//           <span
-//             onClick={() => {
-//               setCurrentTab(tab);
-//               setContactSelected(false);
-//             }}
-//           >
-//             {capitalizeFirstLetter(tab.name)}
-//           </span>
-//         </li>
-//       ))}
-//     </nav>
-//   );
-// }
 
 export default Nav;

@@ -1,7 +1,6 @@
 import React from "react";
 import Projectlist from "../Projectlist";
 import "./style.css";
-import { capitalizeFirstLetter } from "../../utils/helpers";
 
 function Projects(props) {
   const projectArr = [
