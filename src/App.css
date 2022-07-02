@@ -61,7 +61,7 @@ header h1:hover {
 }
 
 main {
-  background-color: whitesmoke;
+  background-color: black;
 }
 
 #header-img {
@@ -113,7 +113,7 @@ main {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   display: flex;
   justify-content: center;
-  color: rgb(211, 203, 192);
+  color: whitesmoke;
 }
 
 .about-p {
@@ -135,7 +135,7 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  background-color: whitesmoke;
+  background-color: black;
   padding: 40px;
 }
 
@@ -239,6 +239,10 @@ main {
   width: 8px;
 }
 
+footer {
+  background-color: black;
+}
+
 .footer-basic {
   padding: 40px 0;
   background-color: rgb(27, 44, 44);
@@ -267,7 +271,7 @@ main {
 
 .footer-basic ul a:hover {
   opacity: 1;
-  color: rgb(112, 96, 215);
+  color: purple(112, 96, 215);
 }
 
 .footer-basic .social {
@@ -304,7 +308,7 @@ main {
 }
 
 .active-page {
-  color: whitesmoke;
+  color: purple;
 }
 
 .inactive-page {
@@ -318,7 +322,7 @@ main {
 }
 
 .resume-container {
-  background-color: whitesmoke;
+  background-color: black;
   color: white;
 }
 
@@ -337,7 +341,7 @@ main {
   font-size: 55px;
 }
 
-.profile-pic {
+.avi {
   display: flex;
   height: 300px;
   width: 300px;

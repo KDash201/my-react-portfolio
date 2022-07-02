@@ -30,8 +30,8 @@ function Projects(props) {
         Projects
       </h2>
       <section id="work">
-        <div class="column"></div>
-        <div id="work-imgs-container" class="main-section-content">
+        <div classname="column"></div>
+        <div id="work-imgs-container" classname="main-section-content">
           {projectArr.map((work) => {
             return <Projectlist work={work} />;
           })}

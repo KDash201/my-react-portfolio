@@ -17,9 +17,9 @@ function About(props) {
           <h2 id="about-title">About Me</h2>
           <img src={avi} alt="profile-pic" className="avi" />
         </div>
-        <div class="column"></div>
-        <div class="main-section-content">
-          <p class="about-p">
+        <div classname="column"></div>
+        <div classname="main-section-content">
+          <p classname="about-p">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis
             velit ac turpis elementum dignissim. Aliquam erat volutpat. Proin
             placerat.
