@@ -10,7 +10,7 @@ function Projectlist({ work }) {
       return (
         <div id="work-main-img">
           <div class={work.class}>
-            <div classname="pic-label">
+            <div class="pic-label">
               <button
                 className="btn btn-success btn-lg mb-3 mx-3"
                 onClick={() => handleClick(work.url)}
@@ -31,7 +31,7 @@ function Projectlist({ work }) {
       return (
         <div className="click-container">
           <div class={work.class} id={work.id}>
-            <div classname="pic-label">
+            <div class="pic-label">
               <button
                 className="btn btn-success mx-3"
                 onClick={() => handleClick(work.url)}

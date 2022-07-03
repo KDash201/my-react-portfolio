@@ -9,14 +9,12 @@ function Projects(props) {
       title: "Wet Nose Adoption",
       github: "https://github.com/KDash201/wet-nose-adoption",
       class: "big-box-1",
-      id: null,
     },
     {
       url: "https://breedtrak.herokuapp.com/",
       title: "Heat",
       github: "https://github.com/RauchDavis13/BitchTrak",
       class: "big-box-2",
-      id: null,
     },
   ];
 
@@ -30,8 +28,8 @@ function Projects(props) {
         Projects
       </h2>
       <section id="work">
-        <div classname="column"></div>
-        <div id="work-imgs-container" classname="main-section-content">
+        <div class="column"></div>
+        <div id="work-imgs-container" class="main-section-content">
           {projectArr.map((work) => {
             return <Projectlist work={work} />;
           })}
