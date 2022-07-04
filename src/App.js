@@ -19,59 +19,11 @@ function App() {
     }
   }
 
-  // const [isToggled, setIsToggled] = useState(false);
-
-  // const [tabOptions] = useState(["Home", "About", "Contact Me", "Projects"]);
-  // const [currentTab, setCurrentTab] = useState(tabOptions("Home"));
-
-  // const [projectAvi] = useState([
-  //   {
-  //     name: "Run Buddy",
-  //     language: "HTML & CSS",
-  //   },
-  //   {
-  //     name: "Wet Nose Adoption",
-  //     language: "HTML, CSS and Javascript",
-  //   },
-  // ]);
-
-  // const [currentProjectAvi, setProjectAvi] = useState(projectAvi[0]);
-
-  // const [contactSelected, setContactSelected] = useState(false);
-
   return (
     <div>
       <Header currentTab={currentTab} setCurrentTab={setCurrentTab} />
-      {/* tabOptions={tabOptions}
-        setCurrentTab={setCurrentTab}
-        currentTab={currentTab}
-        contactSelected={contactSelected}
-        setContactSelected={setContactSelected}
-        projectAvi={projectAvi}
-        currentProjectAvi={currentProjectAvi}
-        setProjectAvi={setProjectAvi}
-      ></Header> */}
 
-      <main>
-        {renderPage()}
-        {/* {!contactSelected ? (
-          <>
-            <About />
-            <Projects
-              tabOptions={tabOptions}
-              setCurrentTab={setCurrentTab}
-              currentTab={currentTab}
-              projectAvi={projectAvi}
-              currentProjectAvi={currentProjectAvi}
-              setProjectAvi={setProjectAvi}
-            ></Projects>
-          </>
-        ) : (
-          <footer>
-            <Footer />
-          </footer>
-        )} */}
-      </main>
+      <main>{renderPage()}</main>
       <Footer />
     </div>
   );
