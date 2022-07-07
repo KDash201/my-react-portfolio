@@ -21,5 +21,5 @@
 
 ## For Additonal Questons
 
-- Link to GitHub profile: https://github.com/Kdash201
+- Link to GitHub profile: https://github.com/KDash201/my-react-portfolio
 - Link to portfolio
