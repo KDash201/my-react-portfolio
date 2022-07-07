@@ -5,7 +5,7 @@
 - This is my portfolio that was built using React.js. It not only shows my past work but my journey. This portfolio will forever be a work-in-progress as I hope to embark on a career as React Developer.
 
 - [Installation] (#Installation)
-- [Usage](#Usage)
+- [Usage] (#Usage)
 
 ## Installation
 
@@ -21,5 +21,5 @@
 
 ## For Additonal Questons
 
-- Link to GitHub profile: https://github.com/Kdash201
+- Link to GitHub profile: https://github.com/KDash201/my-react-portfolio
 - Link to portfolio
