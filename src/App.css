@@ -71,7 +71,7 @@ main {
   background-size: cover;
   background-position: center;
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: flex-end;
 }
 
@@ -88,8 +88,7 @@ main {
 
 #header-img h2 {
   margin-right: 45px;
-  color: rgb(236, 235, 235);
-  background-color: rgba(47, 79, 79, 0.733);
+  color: black;
   font-weight: bold;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 50px;

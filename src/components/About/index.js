@@ -7,8 +7,8 @@ function About(props) {
     <>
       <section id="header-img">
         <h2>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis velit
-          ac turpis elementum dignissim. Aliquam erat volutpat. Proin placerat.
+          "Luck is just being prepared at all times, so when the door opens
+          you're ready" - Ermias Asghedom
         </h2>
       </section>
 
@@ -20,9 +20,10 @@ function About(props) {
         <div class="column"></div>
         <div class="main-section-content">
           <p class="about-p">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis
-            velit ac turpis elementum dignissim. Aliquam erat volutpat. Proin
-            placerat.
+            Inspiring React developer with a background in application security
+            who enjoys being the anchor to web applications. Aside from coding,
+            I have a deep appreciation for art which would include movies,
+            music, and paintings.
           </p>
         </div>
       </section>
