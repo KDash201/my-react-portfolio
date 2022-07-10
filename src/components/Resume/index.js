@@ -22,7 +22,6 @@ function Resume() {
             <li>React</li>
             <li>Node.js</li>
             <li>JavaScript</li>
-            <li>State</li>
           </ul>
           <ul className="mt-3 mb-5 ml-5">
             <li>SQL</li>
@@ -30,7 +29,6 @@ function Resume() {
             <li>CSS/Bootstrap</li>
             <li>GraphQL</li>
             <li>Object Relational Mapping</li>
-            <li>Model-View-Controller</li>
           </ul>
           <ul className="mt-3 mb-5 ml-5">
             <li>Web APIs</li>
@@ -38,7 +36,6 @@ function Resume() {
             <li>Server-Side APIs</li>
             <li>Object Oriented Programming</li>
             <li>Progressive Web Applications</li>
-            <li>Leadership & Organizational Skills</li>
           </ul>
         </div>
       </div>
